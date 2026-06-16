@@ -1,0 +1,145 @@
+```css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f8f3eb;
+    color:#4e342e;
+}
+
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:300px;
+    min-height:100vh;
+    background:#5d4037;
+    color:#fff8e7;
+    text-align:center;
+    padding:30px;
+    position:fixed;
+}
+
+.sidebar img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #d7ccc8;
+    margin-bottom:20px;
+}
+
+.sidebar h2{
+    margin-bottom:10px;
+}
+
+.sidebar p{
+    margin:10px 0;
+}
+
+.sidebar hr{
+    margin:20px 0;
+    border:none;
+    height:2px;
+    background:#d7ccc8;
+}
+
+.content{
+    margin-left:320px;
+    padding:40px;
+    width:100%;
+}
+
+section{
+    margin-bottom:30px;
+}
+
+section h1{
+    color:#5d4037;
+    margin-bottom:15px;
+    border-left:6px solid #8d6e63;
+    padding-left:10px;
+}
+
+.card,
+.project-card,
+.item{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.item{
+    border-left:5px solid #8d6e63;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill-box{
+    background:#8d6e63;
+    color:white;
+    padding:12px 20px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.hobby{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.box{
+    background:#5d4037;
+    color:white;
+    padding:12px 20px;
+    border-radius:30px;
+}
+
+.motto{
+    background:#5d4037;
+    color:#fff8e7;
+    text-align:center;
+    padding:20px;
+    border-radius:15px;
+    margin-top:20px;
+    font-style:italic;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        min-height:auto;
+    }
+
+    .content{
+        margin-left:0;
+        padding:20px;
+    }
+}
+```
